@@ -1,0 +1,122 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url(img/release/bg-lib.jpg);
+    /* max-width: 1200px; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+.pages{
+    display: flex;
+    list-style: none;
+    
+}
+.pages *{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+.motto{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.motto p{
+    max-width: 500px;
+    color: white;
+    margin-top: 40px;
+    font-size: 1.3rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* max-width: 300px; */
+    align-items: center;
+}
+.form h3{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+.form input{
+    height: 40px;
+    width: 300px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0,.8);
+    color: white;
+    font-size: 1.3rem;
+}
+form .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0,.8);
+    color: white;
+}
+.input button:hover{
+    background-color: rgb(7, 97, 233);
+}
+.registered *{
+    /* background-color: aqua; */
+    padding: 10px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 40px;
+}
+.release{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.release p,h2{
+    text-align: center;
+    color: white;
+}
+.release h2{
+    font-size: 40px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.footer *{
+    color: white
+    
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+footer .about{
+    max-width: 300px;
+}
