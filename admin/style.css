@@ -85,3 +85,24 @@ form button{
     color: black;
     padding: 3px;
 }
+
+/* add users */
+.addusers form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 500px;
+}
+.addusers form input{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.addusers form button{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}

@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="right">
-                    <img src="../img/header/user-logo.png" alt="logo" style="height: 50px; border-radius: 30px;">
+                    <img src="../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
                     <p>Admin</p>
                     <a href="../logout.php">logout</a>
                 </div>
@@ -67,11 +67,11 @@
         <!-- nav start -->
         <nav>
             <ul>
-                <li><a href="users.html">View users</a></li>
-                <li><a href="adduser.html">Create new user</a></li>
-                <li><a href="deluser.html">Delete user</a></li>
-                <li><a href="view-books.html">View Books</a></li>
-                <li><a href="add-books.html">Add Books</a></li>
+                <li><a href="users.php">View users</a></li>
+                <li><a href="adduser.php">Create new user</a></li>
+                <li><a href="deluser.php">Delete user</a></li>
+                <li><a href="view-books.php">View Books</a></li>
+                <li><a href="add-books.php">Add Books</a></li>
             </ul>
         </nav>
         <!-- nav end -->

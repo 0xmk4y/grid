@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <style>
     .container{
         display: grid;
@@ -48,9 +49,9 @@
                 </div>
 
                 <div class="right">
-                    <img src="../img/header/user-logo.png" alt="logo" style="height: 50px; border-radius: 30px;">
+                    <img src="../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
                     <p>Admin</p>
-                    <a href="">logout</a>
+                    <a href="../logout.php">logout</a>
                 </div>
             </div>
         </header>
@@ -59,11 +60,11 @@
         <!-- nav start -->
         <nav>
             <ul>
-                <li><a href="users.html">View users</a></li>
-                <li><a href="adduser.html">Create new user</a></li>
-                <li><a href="deluser.html">Delete user</a></li>
-                <li><a href="view-books.html">View Books</a></li>
-                <li><a href="add-books.html">Add Books</a></li>
+                <li><a href="users.php">View users</a></li>
+                <li><a href="adduser.php">Create new user</a></li>
+                <li><a href="deluser.php">Delete user</a></li>
+                <li><a href="view-books.php">View Books</a></li>
+                <li><a href="add-books.php">Add Books</a></li>
             </ul>
         </nav>
         <!-- nav end -->
@@ -71,8 +72,27 @@
         <!-- main starting -->
         <main>
             <div class="welcome">
-                <h2>Welcome to admin dashboard</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat facere deleniti modi laboriosam?</p>
+               <div class="addusers">
+                <form action="process/adduser.php" method="POST"> 
+                    <label for="username">username</label>
+                    <input type="text" name="username">
+
+                    <label for="email">email</label>
+                    <input type="text" id="email" name="email">
+
+                    <label for="phone">phone</label>
+                    <input type="text" id="phone" name="phone">
+
+                    <label for="password">password</label>
+                    <input type="text" id="password" name="password">
+
+                    <label for="is_admin">is_admin</label>
+                    <input type="number" id="is_admin" name="is_admin">
+
+                    <button type="submit" >Add user</button>
+
+                </form>
+               </div>
             </div>
         </main>
         <!-- main ending -->

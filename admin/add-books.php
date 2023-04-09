@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="right">
-                    <img src="../img/header/user-logo.png" alt="logo" style="height: 50px; border-radius: 30px;">
+                    <img src="../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
                     <p>Admin</p>
                     <a href="">logout</a>
                 </div>
@@ -59,21 +59,39 @@
         <!-- nav start -->
         <nav>
             <ul>
-                <li><a href="users.html">View users</a></li>
-                <li><a href="adduser.html">Create new user</a></li>
-                <li><a href="deluser.html">Delete user</a></li>
-                <li><a href="view-books.html">View Books</a></li>
-                <li><a href="add-books.html">Add Books</a></li>
+                <li><a href="users.php">View users</a></li>
+                <li><a href="adduser.php">Create new user</a></li>
+                <li><a href="deluser.php">Delete user</a></li>
+                <li><a href="view-books.php">View Books</a></li>
+                <li><a href="add-books.php">Add Books</a></li>
             </ul>
         </nav>
         <!-- nav end -->
 
         <!-- main starting -->
         <main>
-            <div class="welcome">
-                <h2>Welcome to admin dashboard</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat facere deleniti modi laboriosam?</p>
-            </div>
+        
+                <form action="process/upload.php" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title">
+                    </div>
+
+                    <div>
+                        <label for="" id="author">Author</label>
+                        <input type="text" id="author" name="author">
+                    </div>
+
+                    <div>
+                        <label for="edition" id="edition">Edition</label>
+                        <input type="text" id="edition" name="edition">
+                    </div>
+
+                    <div>
+                        <input type="file" id="upload" name="fileToUpload">
+                        <button type="submit" value="upload file" name="submit">upload</button>
+                    </div>
+                </form>                
         </main>
         <!-- main ending -->
 
