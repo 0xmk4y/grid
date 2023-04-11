@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <style>
     .container{
         display: grid;
@@ -45,13 +44,13 @@
         <header style="background-color: rgb(32, 31, 31);">
             <div>
                 <div class="logo">
-                    <img src="../img/logo.png" alt="img">
+                    <img src="../../img/logo.png" alt="img">
                 </div>
 
                 <div class="right">
-                    <img src="../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
+                    <img src="../../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
                     <p>Admin</p>
-                    <a href="../logout.php">logout</a>
+                    <a href="../../logout.php">logout</a>
                 </div>
             </div>
         </header>
@@ -71,29 +70,28 @@
 
         <!-- main starting -->
         <main>
-            <div class="welcome">
-               <div class="addusers">
-                <form action="process/adduser.php" method="POST"> 
-                    <label for="username">username</label>
-                    <input type="text" name="username">
+        
+                <form action="process/upload.php" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title">
+                    </div>
 
-                    <label for="email">email</label>
-                    <input type="text" id="email" name="email">
+                    <div>
+                        <label for="" id="author">Author</label>
+                        <input type="text" id="author" name="author">
+                    </div>
 
-                    <label for="phone">phone</label>
-                    <input type="text" id="phone" name="phone">
+                    <div>
+                        <label for="edition" id="edition">Edition</label>
+                        <input type="text" id="edition" name="edition">
+                    </div>
 
-                    <label for="password">password</label>
-                    <input type="text" id="password" name="password">
-
-                    <label for="is_admin">is_admin</label>
-                    <input type="number" id="is_admin" name="is_admin">
-
-                    <button type="submit" >Add user</button>
-
-                </form>
-               </div>
-            </div>
+                    <div>
+                        <input type="file" id="upload" name="fileToUpload">
+                        <button type="submit" value="upload file" name="submit">upload</button>
+                    </div>
+                </form>                
         </main>
         <!-- main ending -->
 

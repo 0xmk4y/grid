@@ -17,7 +17,10 @@
         grid-auto-rows: minmax(100px, auto);
         background-color: rgba(0, 0, 0,.8);
     }
-   
+    .container >*{
+         /* padding: 10px; */
+         /* background-color: aqua; */
+    }
     header{
         grid-column: 1/9;
     }
@@ -41,13 +44,13 @@
         <header style="background-color: rgb(32, 31, 31);">
             <div>
                 <div class="logo">
-                    <img src="../img/logo.png" alt="img">
+                    <img src="../../img/logo.png" alt="img">
                 </div>
 
                 <div class="right">
-                    <img src="../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
+                    <img src="../../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
                     <p>Admin</p>
-                    <a href="">logout</a>
+                    <a href="../../logout.php">logout</a>
                 </div>
             </div>
         </header>

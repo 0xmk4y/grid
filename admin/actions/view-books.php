@@ -1,11 +1,3 @@
-<?php
-	session_start();
-	if (!isset($_SESSION['username'])) {
-		// Redirect to the login page or display an error message
-		header("Location: ../login.html");
-		exit;
-	}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,13 +44,13 @@
         <header style="background-color: rgb(32, 31, 31);">
             <div>
                 <div class="logo">
-                    <img src="../img/logo.png" alt="img">
+                    <img src="../../img/logo.png" alt="img">
                 </div>
 
                 <div class="right">
-                    <img src="../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
+                    <img src="../../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
                     <p>Admin</p>
-                    <a href="../logout.php">logout</a>
+                    <a href="../../logout.php">logout</a>
                 </div>
             </div>
         </header>
@@ -78,10 +70,9 @@
 
         <!-- main starting -->
         <main>
-            <div class="welcome">
-                <h2>Welcome to admin dashboard</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat facere deleniti modi laboriosam?</p>
-            </div>
+            <form action="list-files.php" method="post">
+                <button type="submit">Submit</button>
+            </form>
         </main>
         <!-- main ending -->
 
