@@ -2,7 +2,7 @@
 	session_start();
 	if (!isset($_SESSION['username'])) {
 		// Redirect to the login page or display an error message
-		header("Location: login.html");
+		header("Location: login.php");
 		echo "<script>alert('Please log in to access this page.')</script>";
 		exit;
 	}

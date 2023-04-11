@@ -46,7 +46,9 @@
         } else {
             // User is not an admin
             $_SESSION['username'] = $uname;
+            $_SESSION['is_admin'] = $is_admin;
             header('Location: book.php');
+            
         }
     } else {
         // Authentication failed, show error message

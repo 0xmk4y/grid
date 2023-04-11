@@ -1,8 +1,8 @@
 <?php
 session_start();
     // Check if user is logged in as admin
-    if (!isset($_SESSION['username']) || !isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
-        header("Location: ../../login.php"); // Redirect to login page if not logged in as admin
+    if ($_SESSION['is_admin'] != 1 && isset($_SESSION['username'])) {
+        header("Location: ../../book.php"); // Redirect to login page if not logged in as admin
         exit();
     }
 
@@ -62,7 +62,7 @@ session_start();
 
                 <div class="right">
                     <img src="../../img/header/user-logo.svg" alt="logo" style="height: 50px; border-radius: 30px;">
-                    <p>Admin</p>
+                    <p><?php echo $_SESSION['username']?></p>
                     <a href="../../logout.php">logout</a>
                 </div>
             </div>
