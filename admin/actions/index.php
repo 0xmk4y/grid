@@ -1,14 +1,15 @@
 <?php
-	session_start();
-	if (!isset($_SESSION['username'])) {
-		// Redirect to the login page or display an error message
-		header("Location: ../../login.php");
-		exit;
-	}else{
-        if($is_admin != 1){
-            header("Location: ../../book.php");
-        }
+session_start();
+    // Check if user is logged in as admin
+    if (!isset($_SESSION['username']) || !isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
+        header("Location: ../../login.php"); // Redirect to login page if not logged in as admin
+        exit();
     }
+
+// If user is logged in as admin, show the admin page
+// ... rest of the code for the admin page ...
+
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
