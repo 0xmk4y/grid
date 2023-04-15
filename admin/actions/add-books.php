@@ -71,7 +71,7 @@
         <!-- main starting -->
         <main>
         
-                <form action="process/upload.php" method="post" enctype="multipart/form-data">
+                <form action="../process/upload.php" method="post" enctype="multipart/form-data">
                     <div>
                         <label for="title">Title</label>
                         <input type="text" id="title" name="title">

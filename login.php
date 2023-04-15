@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -123,7 +124,7 @@
                 <ul class="pages">
                     <a href="index.html"><li><h3>Home</h3></li></a>
                     <a href=""><li><h3>Books</h3></li></a>
-                    <a href=""><li><h3>Contact</h3></li></a>
+                    <a href="contact.php"><li><h3>Contact</h3></li></a>
                 </ul>
             </nav>
             <div class="motto">
@@ -152,7 +153,7 @@
                         <button type="submit">Sign In</button>
                     </div>
                     <div class="registered">
-                        <p>Do not have an account?<a href="index.html">sign up</a></p>
+                        <p>Do not have an account?<a href="index.php">sign up</a></p>
                     </div>
                 </form>
             </div>

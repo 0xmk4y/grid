@@ -54,12 +54,11 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="index.html" style="color:white">Home</a></li>
-						<li class="nav-item active"><a class="nav-link" href="#" style="color:white">Library</a></li>						
+						<li class="nav-item"><a class="nav-link" href="index.php" style="color:white">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="#" style="color:white">Library</a></li>	
+						<li class="nav-item active"><a class="nav-link" href="logout.php" style="color:white">Logout</a></li>						
 						<li class="nav-item">
-							<form action="logout.php">
-								<button class="nav-link" type="submit" style="color:white; background-color: transparent; border:none;">Logout</button>
-							</form>
+								
 						</li>
 					</ul>
 				</div>
@@ -84,11 +83,12 @@
 				<div class="col-lg-12">
 					<div class="special-menu text-center">
 						<div class="button-group filter-button-group">
-							<button data-filter=".desserts">Desserts</button>
-							<button data-filter=".drinks">Drinks</button>
-							<button data-filter=".lunch">Lunch</button>
-							<button data-filter=".breakfast">Breakfast</button>
-							<button data-filter=".kids">Kids Menu</button>
+							<button data-filter=".desserts">Mathematics</button>
+							<button data-filter=".drinks">Science</button>
+							<button data-filter=".lunch">Engineering</button>
+							<button data-filter=".breakfast">Magazines</button>
+							<button data-filter=".kids">Novels</button>
+							<button data-filter=".kids">Comics</button>
 
 						</div>
 					</div>
